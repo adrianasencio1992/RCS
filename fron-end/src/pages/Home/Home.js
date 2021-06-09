@@ -7,20 +7,7 @@ function Home() {
   return (
     <div>
       <SCHome>
-        <div className="div-h1">
-          <Text className="h1" as="h1">
-            Bullet Journall
-          </Text>
-          <Text className="description-extends" as="p">
-            La App de TAREAS que te hace la vida mas FÁCIL.
-          </Text>
-          <img className="imagen" src="../../../lapiz.png" alt="tareas"></img>
-          <div className="home-container-bottom">
-            <Link to="/task">
-              <SelectButtom className="boton-ready">Ready</SelectButtom>
-            </Link>
-          </div>
-        </div>
+        <div className="div-h1"></div>
       </SCHome>
     </div>
   );
