@@ -1,17 +1,29 @@
 import styled from "styled-components";
 
 const SCNavbar = styled.nav`
-  background: rgb(0, 110, 147);
-  height: 50px;
-  padding: 2rem;
+  height: 100px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   color: #111;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  }
+
+  
+ 
 
   .nav-menu {
     display: flex;
     flex-direction: row;
+    margin-top: 100px;
+    background-color: rgb(212,173,42);
+    width: 1000px;
+    height: 30px;
+    align-items: center;
+    border-radius: 50px;
+    padding-left: 20px;
+    
   }
 
   .link-navbar {
@@ -22,8 +34,8 @@ const SCNavbar = styled.nav`
   }
 
   .link-navbar:hover {
-    color: transparent;
-    text-shadow: 1px 1px black;
+    color: black;
+    
   }
 
   .link-navbar2 {
@@ -47,23 +59,20 @@ const SCNavbar = styled.nav`
     margin-top: 10px;
     width: 100px;
     height: 25px;
-    color: white;
+    color: black;
   }
 
   .link-navbar3:hover {
-    color: transparent;
-    text-shadow: 1px 1px black;
+    color: red;
+    text-shadow: 1px 1px red;
   }
 
-  .lapiz-logo {
-    width: 35px;
-    height: 45px;
-  }
+ 
 
   .hamburguesa {
     font-size: 30px;
     margin-right: 10px;
-    color: white;
+    color: red;
   }
 
   .hamburguesa:hover {

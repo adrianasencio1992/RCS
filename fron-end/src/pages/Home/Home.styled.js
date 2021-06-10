@@ -12,7 +12,7 @@ const SCHome = styled.section`
 .div-h1 {
   width: 100%;  
   height: 812px;
-  background-color: #89D6EC;
+  background-color: #ffffff;
   background-size: 100% 100%;
   
 }

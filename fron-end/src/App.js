@@ -18,13 +18,13 @@ function App() {
       <Dashboard />
       <Switch>
         <Route exact path="/" component={Home} />
-        <PrivateRoute path="/task" exact component={Task} />{" "}
+        <Route exact path="/task" exact component={Task} />{" "}
         {/* Path and Exact props */}
-        <PrivateRoute path="/edit-profile" exact component={EditProfile} />
-        <PrivateRoute exact path="/profile" component={Profile} />
-        <PrivateRoute path="/chronometer" component={ChronometerPage} />
-        <AnonRoute exact path="/signup" component={Signup} redirectPath="/" />
-        <AnonRoute exact path="/login" component={Login} />
+        <Route exact path="/edit-profile" exact component={EditProfile} />
+        <Route exact path="/profile" component={Profile} />
+        <Route exact path="/chronometer" component={ChronometerPage} />
+        <Route exact path="/signup" component={Signup} redirectPath="/" />
+        <Route exact path="/login" component={Login} />
       </Switch>
     </div>
   );

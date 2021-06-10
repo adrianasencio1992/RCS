@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
 }
 .App {
@@ -40,7 +40,6 @@
   }
 }
 
-
 html {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }

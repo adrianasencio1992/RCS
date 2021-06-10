@@ -22,11 +22,9 @@ class Navbar extends Component {
     return (
       <>
         <SCNavbar>
-          <img className="lapiz-logo" src="../../../lapiz.png" alt="lapiz" />
-
           <div className="nav-menu">
             <NavLink className="link-navbar" to="/">
-              Home
+              Home🠻
             </NavLink>
             <a
               className="hamburguesa"
