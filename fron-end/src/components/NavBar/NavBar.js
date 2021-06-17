@@ -23,33 +23,30 @@ class Navbar extends Component {
       <>
         <SCNavbar>
           <div className="nav-menu">
-            <NavLink className="link-navbar" to="/">
-              Home🠻
-            </NavLink>
-            <a
-              className="hamburguesa"
-              href="/"
-              onClick={(e) => this.showMenu(e)}
+            <NavLink
+              className="link-navbar"
+              to="/"
+              onMouseEnter={(e) => this.showMenu(e)}
             >
-              ☰
-            </a>
+              Reformas🠻
+            </NavLink>
             {this.state.showUserMenu ? (
               <div className="link-navbar2">
                 <Link className="link-navbar3" to="/profile">
-                  Perfil
+                  Reformas Integrales
                 </Link>
                 <Link className="link-navbar3" to="/chronometer">
-                  Cronometro
+                  Reformas de cocinas
                 </Link>
                 <Link className="link-navbar3" to="/task">
-                  Tareas
+                  Reforms de baños
                 </Link>
                 <Link
                   className="link-navbar3"
                   to="/logout"
                   onClick={(e) => this.logout(e)}
                 >
-                  Logout
+                  Reformas de parquet
                 </Link>
               </div>
             ) : null}

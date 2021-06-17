@@ -31,11 +31,11 @@ const SCNavbar = styled.nav`
     font-size: 16px;
     margin-top: 4.5px;
     color: white;
+    
   }
 
   .link-navbar:hover {
     color: black;
-    
   }
 
   .link-navbar2 {
@@ -43,11 +43,13 @@ const SCNavbar = styled.nav`
     position: absolute;
     flex-direction: column;
     margin-left: 0px;
-    margin-top: 37px;
+    margin-top: 180px;
+    border-radius:5px;
     height: 150px;
-    width: 100px;
+    width: 170px;
     background: rgb(0, 110, 147);
     z-index: 5;
+    border: 2px solid red;
   }
 
   .link-navbar3 {
@@ -57,7 +59,7 @@ const SCNavbar = styled.nav`
     margin-right: 15px;
     font-size: 16px;
     margin-top: 10px;
-    width: 100px;
+    width: 180px;
     height: 25px;
     color: black;
   }

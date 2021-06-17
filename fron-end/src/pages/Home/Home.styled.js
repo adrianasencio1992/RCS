@@ -4,61 +4,93 @@ const SCHome = styled.section`
   display: flex;
   justify-content: center;
   align-item: center;
+  
   }
 
 
 /* BODY */
-
-.div-h1 {
-  width: 100%;  
-  height: 812px;
-  background-color: #ffffff;
-  background-size: 100% 100%;
-  
-}
-::selection {
-  background: transparent;
+.slideshow {
+  list-style-type: none;
+  margin-top: 187px;
 }
 
-.h1 {
-  margin-top:50px;
-  cursor: default;
-  display: block;
-  -webkit-animation: bounce .3s ease infinite alternate;
-  font-family: 'Erica One', cursive;
-  font-size: 80px;
-  color: #EFEFEF;
-  text-align: center;
-  line-height: 100px;
-  text-shadow: 0 1px 0 #006E93,
-               0 2px 0 #006E93,
-               0 3px 0 #006E93,
-               0 4px 0 #006E93,
-               0 5px 0 #006E93,
-               0 6px 0 transparent,
-               0 7px 0 transparent,
-               0 8px 0 transparent,
-               0 9px 0 transparent,
-               0 10px 10px #006E93;
+/** SLIDESHOW **/
+.slideshow,
+.slideshow:after { 
+    top: -16px; /*Not sure why I needed this fix*/
+		position: fixed;
+    width: 100vw;
+    height: 100%;
+    left: 0px;
+    z-index: 0; 
 }
 
-/*Aquí termina el h1 */
-  .imagen {
-    width: 250px;
-    height:280px;
-    margin-top: 20px;
-    
-  }
+.slideshow li span { 
+		position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 30s linear infinite 0s; 
+}
 
-  .description-extends {
-    margin-top: 20px;
-    font-size: 25px;
-    color: #006E93;
-  }
 
-  .boton-ready{
-    margin-top:10px;
-  }
+
+.slideshow li:nth-child(1) span { 
+    background-image: url("https://uploads-ssl.webflow.com/5976a3655fcd654cb3d604ca/5bfa14d04ae3429879830ee4_home-hero.jpg"); 
+}
+.slideshow li:nth-child(2) span { 
+    background-image: url("https://uploads-ssl.webflow.com/5976a3655fcd654cb3d604ca/5c00c9ecd82b40364fc97f4b_bridge.jpg");
+    animation-delay: 6s; 
+}
+.slideshow li:nth-child(3) span { 
+    background-image: url("https://uploads-ssl.webflow.com/5976a3655fcd654cb3d604ca/5c00c9963ea913260bb41b0e_powerlines.jpg");
+    animation-delay: 12s; 
+}
+.slideshow li:nth-child(4) span { 
+    background-image: url("https://uploads-ssl.webflow.com/5976a3655fcd654cb3d604ca/5bfa14d04ae3429879830ee4_home-hero.jpg");   
+    animation-delay: 18s; 
+}
+.slideshow li:nth-child(5) span { 
+    background-image: url("https://uploads-ssl.webflow.com/5976a3655fcd654cb3d604ca/5c00c9963ea913260bb41b0e_powerlines.jpg");
+    animation-delay: 24s; 
+}
+
+
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+
+.no-cssanimations .cb-slideshow li span {
+	opacity: 1;
+}
+
+
+
+ 
+
+ 
 `;
 
 export default SCHome;

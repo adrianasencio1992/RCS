@@ -7,7 +7,25 @@ function Home() {
   return (
     <div>
       <SCHome>
-        <div className="div-h1"></div>
+        <div className="div-h1">
+          <ul class="slideshow">
+            <li>
+              <span></span>
+            </li>
+            <li>
+              <span>2</span>
+            </li>
+            <li>
+              <span></span>
+            </li>
+            <li>
+              <span></span>
+            </li>
+            <li>
+              <span></span>
+            </li>
+          </ul>
+        </div>
       </SCHome>
     </div>
   );
