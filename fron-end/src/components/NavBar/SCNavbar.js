@@ -17,8 +17,8 @@ const SCNavbar = styled.nav`
     display: flex;
     flex-direction: row;
     margin-top: 100px;
-    background-color: rgb(212,173,42);
-    width: 1000px;
+    background-color: rgb(218,165,32);
+    width: 640px;
     height: 30px;
     align-items: center;
     border-radius: 50px;

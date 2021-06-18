@@ -7,6 +7,84 @@ const SCHome = styled.section`
   
   }
 
+  /*UBICACION*/
+  
+.div-ubicacion-principal{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 65%;
+    top: 7%;
+    justify-content: flex-end;
+    
+}
+
+.div-informacion{
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top:4px;
+
+}
+
+.ubicacion{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    
+   
+}
+
+.ubicacion2{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    visibility: visible;
+    
+}
+
+.ubicacion2:hover{
+    opacity: 0;
+
+}
+
+.h2-ubicacion{
+    font-size: 16px;
+    color: rgb(218,165,32);
+    display:flex;
+    justify-content: flex-start;
+    margin-bottom: 4px;
+}
+
+.h3-ubicacion{
+    font-size: 14px;
+    display:flex;
+    justify-content: flex-start;
+    margin-bottom: 4px;
+}
+
+.div-precio{
+    background-color: rgb(218,165,32);;
+    width: 40px;
+    height: 350px;
+    z-index: 3;
+    position: absolute;
+    left: 97.2%;
+    margin-top: 60px;
+    position: fixed;
+    border-radius: 10px;
+}
+
+.div-h3-precio{
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg);
+    color: white;
+    font-size: 20px;
+    white-space: pre;
+    margin-top: 280px;
+    margin-right:2px;
+    
+}
 
 /* BODY */
 .slideshow {
@@ -18,7 +96,6 @@ const SCHome = styled.section`
 .slideshow,
 .slideshow:after { 
     top: -16px; /*Not sure why I needed this fix*/
-		position: fixed;
     width: 100vw;
     height: 100%;
     left: 0px;
@@ -26,10 +103,10 @@ const SCHome = styled.section`
 }
 
 .slideshow li span { 
-		position: absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
-    top: 0px;
+    top: 171px;
     left: 0px;
     color: transparent;
     background-size: cover;
@@ -43,7 +120,7 @@ const SCHome = styled.section`
 
 
 .slideshow li:nth-child(1) span { 
-    background-image: url("https://uploads-ssl.webflow.com/5976a3655fcd654cb3d604ca/5bfa14d04ae3429879830ee4_home-hero.jpg"); 
+    background-image: url("/masnou.jpg"); 
 }
 .slideshow li:nth-child(2) span { 
     background-image: url("https://uploads-ssl.webflow.com/5976a3655fcd654cb3d604ca/5c00c9ecd82b40364fc97f4b_bridge.jpg");
@@ -85,10 +162,6 @@ const SCHome = styled.section`
 .no-cssanimations .cb-slideshow li span {
 	opacity: 1;
 }
-
-
-
- 
 
  
 `;
