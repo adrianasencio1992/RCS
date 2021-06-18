@@ -87,6 +87,7 @@ const SCHome = styled.section`
 }
 
 /* BODY */
+
 .slideshow {
   list-style-type: none;
   margin-top: 187px;
@@ -96,10 +97,11 @@ const SCHome = styled.section`
 .slideshow,
 .slideshow:after { 
     top: -16px; /*Not sure why I needed this fix*/
-    width: 100vw;
+    width: 100%;
     height: 100%;
     left: 0px;
-    z-index: 0; 
+    z-index: 0;
+    
 }
 
 .slideshow li span { 
@@ -163,7 +165,15 @@ const SCHome = styled.section`
 	opacity: 1;
 }
 
+ /*FORMULARIO PRESUPUESTO*/
  
+ .formulario-presupuesto{
+    margin-top:700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  
+ }
 `;
 
 export default SCHome;

@@ -18,13 +18,13 @@ function Home() {
           <h3 className="h3-ubicacion">✉ rcs.reformas@hotmail.com</h3>
         </div>
       </div>
-      <div className="div-h1">
+      <div className="div-slideshow">
         <ul class="slideshow">
           <li>
             <span></span>
           </li>
           <li>
-            <span>2</span>
+            <span></span>
           </li>
           <li>
             <span></span>
@@ -40,6 +40,54 @@ function Home() {
       <div className="div-precio">
         <h3 className="div-h3-precio">CALCULA TU PRESUPUESTO</h3>
       </div>
+      <div>
+        <form className="formulario-presupuesto">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
+            ></input>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Example select</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect2">
+              Example multiple select
+            </label>
+            <select
+              multiple
+              class="form-control"
+              id="exampleFormControlSelect2"
+            >
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+      <h2>HOLA</h2>
     </SCHome>
   );
 }

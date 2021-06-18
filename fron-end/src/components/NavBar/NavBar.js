@@ -21,7 +21,7 @@ class Navbar extends Component {
   render() {
     return (
       <>
-        <SCNavbar>
+        {/* <SCNavbar>
           <div className="nav-menu">
             <NavLink
               className="link-navbar"
@@ -51,7 +51,7 @@ class Navbar extends Component {
               </div>
             ) : null}
           </div>
-        </SCNavbar>
+        </SCNavbar> */}
       </>
     );
   }
